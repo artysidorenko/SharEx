@@ -1,0 +1,25 @@
+{
+  "name": "sharex",
+  "version": "1.0.0",
+  "description": "WebApp Project - Correlate stock market price against fx movements",
+  "main": "DOM.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artysidorenko/SharEx.git"
+  },
+  "keywords": [
+    "Finance",
+    "Statistics"
+  ],
+  "author": "Arty Sidorenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artysidorenko/SharEx/issues"
+  },
+  "homepage": "https://github.com/artysidorenko/SharEx#readme"
+}
