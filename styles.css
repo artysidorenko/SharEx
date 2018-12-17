@@ -1,0 +1,45 @@
+
+
+body {
+  background-color: beige;
+}
+
+table {
+  border: 2px solid brown;
+  margin: auto;
+  padding: 3px;
+}
+
+details {
+  padding: 35px;
+  font-size: small;
+}
+
+button  {
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: brown;
+  margin-top: 5PX;
+  border-radius: 10px;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+note  {
+  display: block;
+  margin: auto;
+  padding: 45px;
+  font-style: italic;
+  font-size: small;
+}
+
+.table-row-spaced {
+  height: 30px;
+  vertical-align: bottom;
+}
+
+#console {
+  white-space: pre;
+  font-style: italic;
+}

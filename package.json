@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "WebApp Project - Correlate stock market price against fx movements",
   "main": "DOM.js",
-  "dependencies": {},
+  "dependencies": {
+    "jStat": "^1.7.1"
+  },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test.js | tap-spec"
   },
   "repository": {
     "type": "git",

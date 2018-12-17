@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SharEx WebApp</title>
+  <style src="styles.css"></style>
+  <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <h1>SharEx WebApp</h1>
+    <h2>
+      Description: Evaluate relationship between local Fx rate and share price movements.
+    </h2>
+    <h3>
+      Pending Updates: import and implement regression function.
+    </h3>
+    <table>
+      <tr>
+        <th>
+          Code:
+        </th>
+        <td>
+          <input name="comp_code" id="inputName"/>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Company Name:
+        </th>
+        <td id="comp-name">
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Exchange Traded:
+        </th>
+        <td id="comp-exchange">
+        </td>
+      </tr>
+      <tr class="table-row-spaced">
+        <th>
+          Current Price:
+        </th>
+        <td id="curr-price"></td>
+      </tr>
+      <tr>
+        <th>
+          *Avg Gain (30 days):
+        </th>
+        <td id="delta-price"></td>
+      </tr>
+      <tr>
+        <th>
+          Standard Dev (30 days):
+        </th>
+        <td id="stdev-price"></td>
+      </tr>
+      <tr class="table-row-spaced">
+        <th>
+          **USD/EUR Fx Rate:
+        </th>
+        <td id="curr-fx"></td>
+      </tr>
+      <tr>
+        <th>
+          *Avg Gain (30 days):
+        </th>
+        <td id="delta-fx"></td>
+      </tr>
+      <tr>
+        <th>
+          Standard Dev (30 days)
+        </th>
+        <td id="stdev-fx"></td>
+      </tr>
+      <tr class="table-row-spaced">
+        <th>
+          Fx Impact on %Δ Price:
+        </th>
+        <td id="fx-coefficient"></td>
+      </tr>
+      <tr>
+        <th>
+          R-squared:
+        </th>
+        <td id="r-squared"></td>
+      </tr>
+    </table>
+
+    <button id="submit">
+      Analyse Company
+    </button>
+
+    <note>
+      *Note: price and fx average gain is currently based on direct (unweighted) mean.<br/>
+      **Note: Fx rate is reported as dollars per euro i.e. a positive gain indicates a weakening dollar/negative gain indicates a strengthening dollar.
+    </note>
+
+    <details>
+      <summary>
+        Expand for Available Data:
+      </summary>
+      <p id="share-price"></p>
+    </details>
+
+    <!-- <p id="console">
+      TEMPORARY AREA FOR REPORTING BUGS:
+
+    </p> -->
+  </body>
+
+
+<footer>
+  <script type="text/javascript" src="logic.js"></script>
+  <script type="text/javascript" src="dao.js"></script>
+</footer>
+
+
+</html>
